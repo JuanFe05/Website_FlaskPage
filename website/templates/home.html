@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content%}
+
+    {% include 'partials/_navbar.html' %}
+
+    <section class="py-9">
+        <div class="container">
+
+            <div class="row  align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="text-gradient text-primary mb-0 mt-2">Bienvenido {{ user.nombres }}</h3>
+                    <h3>Flask - Framework de python</h3>
+                    <p>
+                        Flask nos permite crear de una manera muy sencilla aplicaciones web con Python. Flask es un
+                        “micro” Framework escrito en Python y concebido para facilitar el desarrollo de Aplicaciones Web
+                        bajo el patrón MVC.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
+                    <h3>¿Por qué usar Flask?</h3>
+
+                    <div class="p-3 info-horizontal">
+                        <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </div>
+                        <div class="description ps-3">
+                            <p class="mb-0">
+                                Para desarrollar una App básica o que se quiera desarrollar de una forma ágil y rápida
+                                Flask puede ser muy conveniente, para determinadas aplicaciones no se necesitan muchas
+                                extensiones y es suficiente.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-3 info-horizontal">
+                        <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
+                            <i class="fa fa-server" aria-hidden="true"></i>
+                        </div>
+                        <div class="description ps-3">
+                            <p class="mb-0">
+                                No se necesita una infraestructura con un servidor web para probar las aplicaciones sino
+                                de una manera sencilla se puede correr un servidor web para ir viendo los resultados que
+                                se van obteniendo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-3 info-horizontal">
+                        <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
+                            <i class="fa fa-bug" aria-hidden="true"></i>
+                        </div>
+                        <div class="description ps-3">
+                            <p class="mb-0">
+                                Si tenemos algún error en el código que se está construyendo se puede depurar ese error
+                                y se puede ver los valores de las variables. Además está la posibilidad de integrar
+                                pruebas unitarias.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+{% endblock %}
